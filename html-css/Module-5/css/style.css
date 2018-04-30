@@ -238,11 +238,15 @@ body {
     visibility: hidden;
 }
 .galery-product-card:hover>.wraper-buttons-hiden {
-    visibility: visible;
+  visibility: visible;
 }
-.galery-product-card:hover>.product-name {
-  background-color: #1abc9c; /* Почему не работает Hover? */
+.galery-product-card:hover .product-name {
+  background-color: #1abc9c;
 }
+.galery-product-card:hover .product-cost {
+  background-color: #7fd9c7;
+}
+
 footer {
   height: 89px;
   text-align: center;
