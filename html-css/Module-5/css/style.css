@@ -1,0 +1,266 @@
+* {
+  outline: 1px solid;
+}
+body {
+  width: 1600px;
+  margin: auto;
+  background-color: #ffffff;
+}
+.header {
+  margin: 0 244px;
+  /* Почему не работает text-align: justify??? */
+}
+.logo {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+}
+.logo::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+}
+.main-nav {
+  display: inline-block;
+  width: 1029px;
+}
+.nav-list {
+  margin-left: auto;
+  width: 467px;
+  padding: 0;
+}
+.nav-item {
+  /* Почему не работает text-align: для inline-block??? */
+  display: inline-block;
+  list-style: none;
+}
+.nav-item:first-child {
+  margin-right: 32px;
+}
+.nav-item:nth-child(2) {
+  margin-right: 34px;
+}
+.nav-item:nth-child(3) {
+  margin-right: 28px;
+}
+.nav-item:nth-child(4) {
+  margin-right: 24px;
+}
+.nav-item:nth-child(5) {
+  margin-right: 31px;
+}
+
+.nav-link {
+  vertical-align: top;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open sans", sans-serif;
+  font-weight: bold;
+  color: #0f0101;
+  font-size: 14px;
+  line-height: 11px;
+  letter-spacing: -0.28px;
+}
+.nav-item:first-child > .nav-link {
+  color: #1abc9c;
+}
+.hiden {
+  display: none;
+}
+.slider {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 198px;
+  width: 1600px;
+  height: 600px;
+  background-image: url(../img/slide4.png);
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+.slider-title {
+  margin: 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 82px;
+  letter-spacing: -1.2px;
+  text-transform: uppercase;
+}
+.slider-text {
+  margin: 0 430px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 54px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+}
+.slider-title::before {
+  content: url(../img/arrow1.png);
+  position: absolute;
+  left: 245px;
+  top: 223px;
+}
+.slider-title::after {
+  content: url(../img/arrow2.png);
+  position: absolute;
+  right: 243px;
+  top: 223px;
+}
+.galery {
+  padding-top: 100px;
+  padding-bottom: 95px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  background-color: #e9f0fd;
+}
+.galery-title {
+  margin: 0;
+  text-align: center;
+  color: #515151;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 32px;
+  letter-spacing: -0.96px;
+}
+.galery-title::after {
+  content: url(../img/rectangle3.png);
+  display: block;
+  padding-top: 8px;
+}
+.product-cards-wraper {
+  padding-left: 245px;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.galery-product-card {
+  position: relative;
+  display: inline-block;
+  margin: 80px 27px 0 0;
+  height: 320px;
+}
+.product-name {
+  display: inline;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 4px 0 0 14px;
+  box-sizing: border-box;
+  width: 200px;
+  height: 40px;
+  background-color: #323232;
+}
+.product-cost {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 4px 0 0 12px;
+  box-sizing: border-box;
+  width: 55px;
+  height: 40px;
+  background-color: rgba(50, 50, 50, 0.44);
+}
+.product-cost::before {
+  content: "\0024";
+}
+.wraper-buttons-hiden {
+  width: 235px;
+  height: 260px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.549;
+}
+.button-top {
+  width: 48px;
+  height: 48px;
+  padding-top: 5px;
+  position: absolute;
+  top: 79px;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #fff;
+}
+.button1 {
+  left: 35px;
+}
+.button2 {
+  left: 94px;
+  background-color: #1abc9c;
+  opacity: 1;
+  /* Как сделать фон непрозрачным? */
+}
+.button3 {
+  left: 151px;
+}
+.button1::after {
+  content: url(../img/but1.png);
+}
+.button2::after {
+  content: url(../img/but2.png);
+}
+.button3::after {
+  content: url(../img/but3.png);
+}
+.button4 {
+  position: absolute;
+  left: 35px;
+  top: 136px;
+  width: 164px;
+  height: 48px;
+  padding-left: 17px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-color: #fff;
+  background-color: rgb(50, 50, 50);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: -0.28px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.button4:before {
+  content: url(../img/but.png);
+  position: relative;
+  top: 8px;
+  right: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.wraper-buttons-hiden {
+    visibility: hidden;
+}
+.galery-product-card:hover>.wraper-buttons-hiden {
+    visibility: visible;
+}
+.galery-product-card:hover>.product-name {
+  background-color: #1abc9c; /* Почему не работает Hover? */
+}
+footer {
+  height: 89px;
+  text-align: center;
+  background-color: #323232;
+}
+.footer-text {
+  margin: 0;
+  padding-top: 28px;
+  padding-right: 12px;
+  font-family: "Open sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  color: #fff;
+}
+.footer-text span {
+  color: #1abc9c;
+}
