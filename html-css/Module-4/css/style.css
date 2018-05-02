@@ -28,6 +28,9 @@ body {
     font-weight: 900;
     color: #1abc9c;
 }
+.nav-list {
+    float: right;
+}
 .nav-item {
     float: right;
     list-style: none;
@@ -67,6 +70,11 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+.list-clearfix {
+    content: "";
+    display: table;
+    clear: right;
 }
 /* GALERY */
 .products-galery {
@@ -156,7 +164,7 @@ body {
     color: #515151;
 }
 .news-section-title::after {
-    content: url("../img/rectangle.png");
+    content: 'url("../img/rectangle.png")';
     display: block;
     margin-top: 8px;
 }
