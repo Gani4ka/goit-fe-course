@@ -13,99 +13,115 @@
 </head>
 
 <body>
-    <header class="header">
-        <p class="logo">Mart</p>
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Page</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact us</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <h1 class="hiden">The mane page of the site</h1>
-        <section class="slider">
-            <h2 class="slider-title">Affordable Paris Tours</h2>
-            <p class="slider-text">City tours / tour tickets / tour guides</p>
-        </section>
-        <section class="galery">
-            <h2 class="galery-title">New collection</h2>
-            <div class="product-cards-wraper">
-                <figure class="galery-product-card">
-                    <img src="img/category1.jpg" alt="blue tshirt" width="255px" height="320px">
-                    <figurecaption>
-                        <p class="product-name">blue tshirt</p>
-                        <p class="product-cost">26</p>
-                    </figurecaption>
-                    <div class="wraper-buttons-hiden">
-                        <button class="button-top button1"></button>
-                        <button class="button-top button2"></button>
-                        <button class="button-top button3"></button>
-                        <button class="button4">Add to cart</button>
-                    </div>
-                </figure>
-                <figure class="galery-product-card">
-                    <img src="img/category2.jpg" alt="women tshirt" width="255px" height="320px">
-                    <figurecaption>
-                        <p class="product-name">women tshirt</p>
-                        <p class="product-cost">31</p>
-                    </figurecaption>
-                    <div class="wraper-buttons-hiden">
-                        <button class="button-top button1"></button>
-                        <button class="button-top button2"></button>
-                        <button class="button-top button3"></button>
-                        <button class="button4">Add to cart</button>
-                    </div>
-                </figure>
-                <figure class="galery-product-card">
-                    <img src="img/category3.jpg" alt="yellow tshirt" width="255px" height="320px">
-                    <figurecaption>
-                        <p class="product-name">yellow tshirt</p>
-                        <p class="product-cost">21</p>
-                    </figurecaption>
-                    <div class="wraper-buttons-hiden">
-                        <button class="button-top button1"></button>
-                        <button class="button-top button2"></button>
-                        <button class="button-top button3"></button>
-                        <button class="button4">Add to cart</button>
-                    </div>
-                </figure>
-                <figure class="galery-product-card">
-                    <img src="img/category4.jpg" alt="cool lingerie" width="255px" height="320px">
-                    <figurecaption>
-                        <p class="product-name">cool lingerie</p>
-                        <p class="product-cost">56</p>
-                    </figurecaption>
-                    <div class="wraper-buttons-hiden">
-                        <button class="button-top button1"></button>
-                        <button class="button-top button2"></button>
-                        <button class="button-top button3"></button>
-                        <button class="button4">Add to cart</button>
-                    </div>
-                </figure>
+    <div class="page-wrapper">
+        <!-- HEADER -->
+        <header class="header">
+            <p class="logo">Mart</p>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item nav-item-active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <h1 class="hiden">The mane page of the site</h1>
+            <!-- SLIDER -->
+            <div class="slider">
+                <ul class="slides">
+                    <li class="slides-item">
+                        <img src="img/slide4.png" alt="image" class="slides-image" width="1600" height="600">
+                        <p class="slider-title">Affordable Paris Tours</p>
+                        <p class="slider-text">City tours / tour tickets / tour guides</p>
+                    </li>
+                </ul>
+                <button class="slider-ctrl slider-ctrl-prev"></button>
+                <button class="slider-ctrl slider-ctrl-next"></button>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p class="footer-text">All Rights Reserved © Dokan | Designed <span>ThemenGraph</span></p>
-    </footer>
-<!-- Как правильно оформить футер (теги)? -->
+            <!-- GALERY -->
+            <section class="galery">
+                <h2 class="galery-title">New collection</h2>
+                <div class="product-cards-wraper">
+                    <figure class="galery-product-card">
+                        <img src="img/category1.jpg" alt="blue tshirt" width="255" height="320">
+                        <figcaption>
+                            <p class="product-name">blue tshirt</p>
+                            <p class="product-cost">26</p>
+                        </figcaption>
+                        <div class="wraper-buttons-hiden">
+                            <button class="button-top button1"></button>
+                            <button class="button-top button2"></button>
+                            <button class="button-top button3"></button>
+                            <button class="button4">Add to cart</button>
+                        </div>
+                    </figure>
+                    <figure class="galery-product-card">
+                        <img src="img/category2.jpg" alt="women tshirt" width="255" height="320">
+                        <figcaption>
+                            <p class="product-name">women tshirt</p>
+                            <p class="product-cost">31</p>
+                        </figcaption>
+                        <div class="wraper-buttons-hiden">
+                            <button class="button-top button1"></button>
+                            <button class="button-top button2"></button>
+                            <button class="button-top button3"></button>
+                            <button class="button4">Add to cart</button>
+                        </div>
+                    </figure>
+                    <figure class="galery-product-card">
+                        <img src="img/category3.jpg" alt="yellow tshirt" width="255" height="320">
+                        <figcaption>
+                            <p class="product-name">yellow tshirt</p>
+                            <p class="product-cost">21</p>
+                        </figcaption>
+                        <div class="wraper-buttons-hiden">
+                            <button class="button-top button1"></button>
+                            <button class="button-top button2"></button>
+                            <button class="button-top button3"></button>
+                            <button class="button4">Add to cart</button>
+                        </div>
+                    </figure>
+                    <figure class="galery-product-card">
+                        <img src="img/category4.jpg" alt="cool lingerie" width="255" height="320">
+                        <figcaption>
+                            <p class="product-name">cool lingerie</p>
+                            <p class="product-cost">56</p>
+                        </figcaption>
+                        <div class="wraper-buttons-hiden">
+                            <button class="button-top button1"></button>
+                            <button class="button-top button2"></button>
+                            <button class="button-top button3"></button>
+                            <button class="button4">Add to cart</button>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <p class="footer-text">All Rights Reserved © Dokan | Designed
+                <span>ThemenGraph</span>
+            </p>
+        </footer>
+        <!-- Как правильно оформить футер (теги)? -->
+    </div>
+
 </body>
 
 </html>

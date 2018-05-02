@@ -1,11 +1,19 @@
+/* * {
+  outline: 1px solid;
+} */
+
 body {
-  width: 1600px;
-  margin: auto;
   background-color: #ffffff;
 }
+.page-wrapper {
+  width: 1600px;
+  margin: auto;
+}
+
+/* HEADER */
 .header {
   margin: 0 244px;
-  /* Почему не работает text-align: justify??? */
+  /* Почему не работает text-align: justify? */
 }
 .logo {
   display: inline-block;
@@ -33,23 +41,18 @@ body {
   /* Почему не работает text-align: для inline-block??? */
   display: inline-block;
   list-style: none;
+  margin-right: 30px;
 }
-.nav-item:first-child {
-  margin-right: 32px;
+.nav-item:last-child {
+  margin-right: 0;
 }
-.nav-item:nth-child(2) {
-  margin-right: 34px;
+.nav-item-active .nav-link {
+  color: #1abc9c;
 }
-.nav-item:nth-child(3) {
-  margin-right: 28px;
+/* Сделала через класс, я так тебя поняла по прошлому дз, а вообще правильно через псеврокласс, верно?: */
+.nav-item:active .nav-link {
+  color: #1abc9c;
 }
-.nav-item:nth-child(4) {
-  margin-right: 24px;
-}
-.nav-item:nth-child(5) {
-  margin-right: 31px;
-}
-
 .nav-link {
   vertical-align: top;
   text-decoration: none;
@@ -61,25 +64,28 @@ body {
   line-height: 11px;
   letter-spacing: -0.28px;
 }
-.nav-item:first-child > .nav-link {
-  color: #1abc9c;
-}
+
+/* SLIDER */
 .hiden {
   display: none;
 }
 .slider {
   position: relative;
-  box-sizing: border-box;
-  padding-top: 198px;
-  width: 1600px;
-  height: 600px;
-  background-image: url(../img/slide4.png);
   font-family: "Roboto", sans-serif;
   color: #fff;
+  line-height: 0;
+}
+.slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .slider-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 198px;
   margin: 0;
-  text-align: center;
   font-weight: 900;
   font-size: 60px;
   line-height: 82px;
@@ -87,34 +93,53 @@ body {
   text-transform: uppercase;
 }
 .slider-text {
-  margin: 0 430px;
+  position: absolute;
+  top: 280px;
+  left: 430px;
+  margin: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 54px;
   letter-spacing: -0.48px;
   text-transform: uppercase;
 }
-.slider-title::before {
-  content: url(../img/arrow1.png);
+.slider-ctrl {
   position: absolute;
+  width: 105px;
+  height: 105px;
+  border: none;
+  background-color: #7fd9c7;
+  opacity: .65;
+}
+.slider-ctrl-prev {
+  top: 225px;
   left: 245px;
-  top: 223px;
 }
-.slider-title::after {
-  content: url(../img/arrow2.png);
-  position: absolute;
-  right: 243px;
-  top: 223px;
+.slider-ctrl-prev::after {
+  content: url(../img/1.png);
 }
+.slider-ctrl-next {
+  top: 225px;
+  right: 245px;
+}
+.slider-ctrl-next::after {
+  content: url(../img/2.png);
+}
+.slider-ctrl:active {
+  background-color: #1abc9c;
+}
+
+/* GALERY */
 .galery {
   padding-top: 100px;
-  padding-bottom: 95px;
+  padding-bottom: 100px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   background-color: #e9f0fd;
 }
 .galery-title {
   margin: 0;
+  margin-bottom: 82px;
   text-align: center;
   color: #515151;
   text-transform: uppercase;
@@ -130,40 +155,38 @@ body {
 .product-cards-wraper {
   padding-left: 245px;
   font-size: 18px;
-  line-height: 32px;
   letter-spacing: -0.36px;
   text-transform: uppercase;
   color: #fff;
+  line-height: 0;
 }
 .galery-product-card {
   position: relative;
   display: inline-block;
-  margin: 80px 27px 0 0;
-  height: 320px;
+  margin: 0 27px 0 0;
 }
-.product-name {
-  display: inline;
+figcaption {
   position: absolute;
   bottom: 0;
-  left: 0;
+  background-color: #323232;
+}
+.product-name {
+  display: inline-block;
   margin: 0;
-  padding: 4px 0 0 14px;
+  padding: 6px 0 3px 14px;
   box-sizing: border-box;
-  width: 200px;
-  height: 40px;
+  width: 198px;
+  line-height: 32px;
   background-color: #323232;
 }
 .product-cost {
   display: inline-block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
   margin: 0;
-  padding: 4px 0 0 12px;
+  padding: 6px 0 3px 12px;
   box-sizing: border-box;
-  width: 55px;
-  height: 40px;
-  background-color: rgba(50, 50, 50, 0.44);
+  width: 52px;
+  line-height: 32px;
+  background-color: rgba(255, 255, 255, 0.44);
 }
 .product-cost::before {
   content: "\0024";
@@ -174,13 +197,11 @@ body {
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: rgb(0, 0, 0);
-  opacity: 0.549;
+  background-color: rgba(0, 0, 0, .55);
 }
 .button-top {
-  width: 48px;
-  height: 48px;
-  padding-top: 5px;
+  width: 49px;
+  padding: 12px 6px 8px 6px;
   position: absolute;
   top: 79px;
   background-color: transparent;
@@ -193,8 +214,7 @@ body {
 .button2 {
   left: 94px;
   background-color: #1abc9c;
-  opacity: 1;
-  /* Как сделать фон непрозрачным? */
+
 }
 .button3 {
   left: 151px;
@@ -213,8 +233,7 @@ body {
   left: 35px;
   top: 136px;
   width: 164px;
-  height: 48px;
-  padding-left: 17px;
+  padding: 3px 6px 7px 17px;
   box-sizing: border-box;
   border: 1px solid;
   border-color: #fff;
@@ -246,9 +265,13 @@ body {
 .galery-product-card:hover .product-cost {
   background-color: #7fd9c7;
 }
+.galery-product-card:hover figcaption {
+  background-color: #1abc9c;
+}
 
+/* FOOTER */
 footer {
-  height: 89px;
+  padding-bottom: 34px;
   text-align: center;
   background-color: #323232;
 }
