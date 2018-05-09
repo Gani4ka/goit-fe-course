@@ -6,15 +6,11 @@ body {
   background-color: #ffffff;
 }
 .page-wrapper {
-  width: 1600px;
+  width: 1110px;
   margin: auto;
 }
 
 /* HEADER */
-.header {
-  margin: 0 244px;
-  /* Почему не работает text-align: justify? */
-}
 .logo {
   display: inline-block;
   font-family: "Roboto", sans-serif;
@@ -30,7 +26,7 @@ body {
 }
 .main-nav {
   display: inline-block;
-  width: 1029px;
+  width: 1027px;
 }
 .nav-list {
   margin-left: auto;
@@ -38,7 +34,6 @@ body {
   padding: 0;
 }
 .nav-item {
-  /* Почему не работает text-align: для inline-block??? */
   display: inline-block;
   list-style: none;
   margin-right: 30px;
@@ -71,7 +66,11 @@ body {
 }
 .slider {
   position: relative;
-  font-family: "Roboto", sans-serif;
+  width: 1110px;
+  height: 600px;
+  background-image: url(../img/slide4.png);
+  background-position-x: center;
+  font-family: 'robotoblack', sans-serif;
   color: #fff;
   line-height: 0;
 }
@@ -82,11 +81,10 @@ body {
 }
 .slider-title {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 182px;
   top: 198px;
   margin: 0;
-  font-weight: 900;
+  /* font-weight: 900; */
   font-size: 60px;
   line-height: 82px;
   letter-spacing: -1.2px;
@@ -95,7 +93,7 @@ body {
 .slider-text {
   position: absolute;
   top: 280px;
-  left: 430px;
+  left: 182px;
   margin: 0;
   font-weight: 300;
   font-size: 24px;
@@ -113,14 +111,14 @@ body {
 }
 .slider-ctrl-prev {
   top: 225px;
-  left: 245px;
+  left: 0;
 }
 .slider-ctrl-prev::after {
   content: url(../img/1.png);
 }
 .slider-ctrl-next {
   top: 225px;
-  right: 245px;
+  right: 0;
 }
 .slider-ctrl-next::after {
   content: url(../img/2.png);
@@ -139,7 +137,7 @@ body {
 }
 .galery-title {
   margin: 0;
-  margin-bottom: 82px;
+  margin-bottom: 118px;
   text-align: center;
   color: #515151;
   text-transform: uppercase;
@@ -148,12 +146,18 @@ body {
   letter-spacing: -0.96px;
 }
 .galery-title::after {
-  content: url(../img/rectangle3.png);
+  content: '';
   display: block;
-  padding-top: 8px;
+  width: 164px;
+  height: 8px;
+  background-image: url(../img/rectangle3.png);
+  background-repeat: no-repeat;
+  position: relative;
+  top: 30px;
+  margin: 0px auto 0;
+
 }
 .product-cards-wraper {
-  padding-left: 245px;
   font-size: 18px;
   letter-spacing: -0.36px;
   text-transform: uppercase;
@@ -163,11 +167,15 @@ body {
 .galery-product-card {
   position: relative;
   display: inline-block;
-  margin: 0 27px 0 0;
+  margin: 0 25px 0 0;
+}
+figure:last-child {
+  margin-right: 0;
 }
 figcaption {
   position: absolute;
   bottom: 0;
+  width: 100%;
   background-color: #323232;
 }
 .product-name {
@@ -180,8 +188,11 @@ figcaption {
   background-color: #323232;
 }
 .product-cost {
+  position: absolute;
+  right: 0;
   display: inline-block;
   margin: 0;
+  /* -webkit-margin-after: 0em; */
   padding: 6px 0 3px 12px;
   box-sizing: border-box;
   width: 52px;
