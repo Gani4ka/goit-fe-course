@@ -1,0 +1,295 @@
+/* * {
+    outline: 1px solid;
+} */
+.page-wrapper {
+    width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+.main-nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 0;
+font-family: Montserrat, sans-serif;
+}
+.logo {
+text-decoration: none;
+font-size: 30px;
+font-weight: 700;
+color: #95e1d3;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    width: 490px;
+    justify-content: space-between;
+    padding: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav-link {
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: #95e1d3;
+}
+.nav-item:hover>.nav-link {
+    transition-property:
+    color,
+    border-bottom;
+    transition-duration: 200ms;
+    color: #f38181;
+    border-bottom: 2px solid #f38181;
+}
+
+/* SERVICE */
+.section-pretitle {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 94px;
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 24px;
+}
+.section-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 100px 0;
+    padding-top: 15px;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    top: 85px;
+    width: 60px;
+    height: 3px;
+    background-image: url(../img/line-h.png);
+}
+.service-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-item {
+    width: 370px;
+    margin-bottom: 75px;
+}
+.service-item-title {
+    margin: 0;
+font-family: Montserrat, sans-serif;
+font-size: 14px;
+text-transform: uppercase;
+color: #333333;
+}
+.service-itm-text {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+.service-item:first-of-type::before {
+    content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/ALARM.png);
+  float: left;
+  margin: 4px 26px 54px 30px;
+}
+.service-item:nth-of-type(2)::before {
+    content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/GRAPH.png);
+  float: left;
+  margin: 4px 26px 54px 30px;
+}
+.service-item:nth-of-type(3)::before {
+    content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/COMPUTER.png);
+  float: left;
+  margin: 4px 26px 54px 30px;
+}
+.service-item:nth-of-type(4)::before {
+    content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/BOOK.png);
+  float: left;
+  margin: 4px 26px 54px 30px;
+}
+.service-item:nth-of-type(5)::before {
+    content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/HOME.png);
+  float: left;
+  margin: 4px 26px 54px 30px;
+}
+.service-item:nth-of-type(6)::before {
+    content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/IMAGE.png);
+  float: left;
+  margin: 4px 26px 54px 30px;
+}
+
+/* TEAM */
+.no-padding-pretitle {
+    padding: 0;
+}
+.less-margin-title {
+    margin-bottom: 80px;
+}
+.section-text {
+    padding: 0 128px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+.team-members-wrapper {
+    margin: 0 0 60px 0;
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+.team-member {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.team-member-name {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333333;
+    }
+.team-member-occupation {
+    text-align: center;
+    font-family: roboto, sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+.team-conteiner-hover {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 470px;
+    background-image: linear-gradient(rgba(243, 129, 129, .9), rgba(252, 227, 138, .9));
+    box-shadow: 11px 10px #95e1d3;
+}
+.conteiner-hover-button {
+    width: 55px;
+    height: 55px;
+    margin-right: 1.5px;
+    border: none;
+    background-color: #fce38a;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.conteiner-hover-button:first-child {
+    background-image: url(../img/facebook.png);
+}
+.conteiner-hover-button:nth-child(2) {
+    background-image: url(../img/twitter.png);
+}
+.conteiner-hover-button:nth-child(3) {
+    background-image: url(../img/pinterest.png);
+}
+.conteiner-hover-button:nth-child(4) {
+    background-image: url(../img/instagram.png);
+}
+.conteiner-hover-button:hover {
+    transition: background-color 200ms;
+    background-color: #95e1d3;
+}
+.visualy-hiden {
+    display: none;
+}
+.team-member:hover .team-conteiner-hover {
+    transition: display 2s;
+    display: flex;
+}
+/* .n1 {
+    opacity: 0;
+} */
+/* .n1:hover {
+    transition: opacity 5s;
+    opacity: 1;
+} */
+/* Не работает duration для .team-member:hover .team-conteiner-hover. через opacity, тоже не работает...Чего? */
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 0;
+    border-top: 1px solid #e5e5e5;
+    --button-width: 150px;
+}
+.footer-text {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+.footer-text-last-word {
+    color: #f38181;
+}
+.footer-input {
+    position: absolute;
+    right: var(--button-width);
+    width: 230px;
+    height: 40px;
+    padding-left: 12px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    font-family: roboto, sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
+    /* color: #cc00cc;??? */
+}
+.footer-button {
+    width: var(--button-width);
+    height: 40px;
+    background-color: #95e1d3;
+    border: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* как убрать границу (или это тень) с кнопок, когда они активны? */
+
+
+
