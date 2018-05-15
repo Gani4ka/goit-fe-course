@@ -204,6 +204,12 @@ color: #333333;
     height: 470px;
     background-image: linear-gradient(rgba(243, 129, 129, .9), rgba(252, 227, 138, .9));
     box-shadow: 11px 10px #95e1d3;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+}
+.team-member:hover .team-conteiner-hover {
+    opacity: 1;
 }
 .conteiner-hover-button {
     width: 55px;
@@ -213,6 +219,8 @@ color: #333333;
     background-color: #fce38a;
     background-repeat: no-repeat;
     background-position: center;
+    outline: 0;
+    transition: background-color 200ms;
 }
 .conteiner-hover-button:first-child {
     background-image: url(../img/facebook.png);
@@ -227,24 +235,12 @@ color: #333333;
     background-image: url(../img/instagram.png);
 }
 .conteiner-hover-button:hover {
-    transition: background-color 200ms;
     background-color: #95e1d3;
 }
 .visualy-hiden {
     display: none;
 }
-.team-member:hover .team-conteiner-hover {
-    transition: display 2s;
-    display: flex;
-}
-/* .n1 {
-    opacity: 0;
-} */
-/* .n1:hover {
-    transition: opacity 5s;
-    opacity: 1;
-} */
-/* Не работает duration для .team-member:hover .team-conteiner-hover. через opacity, тоже не работает...Чего? */
+
 
 /* FOOTER */
 footer {
@@ -276,7 +272,10 @@ footer {
     font-style: italic;
     font-size: 15px;
     line-height: 24px;
-    /* color: #cc00cc;??? */
+    outline: 0;
+}
+.footer-input::placeholder {
+    color: #e5e5e5;
 }
 .footer-button {
     width: var(--button-width);
@@ -288,6 +287,10 @@ footer {
     font-size: 14px;
     color: #fff;
     text-transform: uppercase;
+    outline: 0;
+}
+.footer-button:active {
+    background-color: #1fdfbc;
 }
 /* как убрать границу (или это тень) с кнопок, когда они активны? */
 
