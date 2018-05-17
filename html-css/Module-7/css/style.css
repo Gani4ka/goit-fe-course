@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid; */
+}
+/* HEADER */
+.page-wrap {
+  width: 940px;
+  margin: auto;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.main-nav-list {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  list-style: none;
+  font-family: montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+.main-nav-link {
+  text-decoration: none;
+  color: #222222;
+}
+.logo-link {
+  height: 28px;
+  text-decoration: none;
+}
+.main-nav-item:hover > .main-nav-link {
+  color: #fed136;
+}
+
+/* SERVICES */
+.visually-hidden {
+  display: none;
+}
+.services {
+  padding-top: 60px;
+}
+.services-title {
+  text-align: center;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 75px;
+  color: #222;
+  text-transform: uppercase;
+}
+.services-subtitle {
+  margin-bottom: 75px;
+  text-align: center;
+  font-family: Merriweather, serif;
+  font-size: 16px;
+}
+.services-item-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.service-item {
+  width: 31%;
+}
+.service-item:first-child::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  background-image: url(../img/Icon-Basket.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+}
+.service-item:nth-child(2)::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  background-image: url(../img/Icon-laptop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+}
+.service-item:nth-child(3)::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  background-image: url(../img/Icon-locked.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+}
+.service-item-title {
+  text-align: center;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 60px;
+  color: #222;
+}
+.service-item-description {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  color: #777;
+}
+
+/* CONTACT US */
+.contact {
+  width: 100vw;
+  padding: 110px 0;
+  background-image: url(../img/map.png);
+}
+.contact-title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 75px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.contact-subtitle {
+  margin-bottom: 75px;
+  text-align: center;
+  font-family: Merriweather, serif;
+  font-size: 16px;
+  color: #777;
+}
+.contact form {
+  width: 940px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: montserrat, sans-serif;
+}
+.contact input {
+  width: 455px;
+  height: 50px;
+  margin-bottom: 25px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  outline: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 40px;
+  color: #222;
+  text-transform: uppercase;
+}
+.contact textarea {
+  width: 455px;
+  height: 200px;
+  position: absolute;
+  padding: 0 10px;
+  right: 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  outline: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 40px;
+  color: #222;
+  text-transform: uppercase;
+}
+.contact input[name="name"]:valid {
+  box-shadow: 0 0 0 2px green;
+}
+.contact input[name="email"]:valid {
+  box-shadow: 0 0 0 2px green;
+}
+.contact textarea[name="message"]:valid {
+  box-shadow: 0 0 0 2px green;
+}
+.contact input[name="name"]:focus:invalid {
+  box-shadow: 0 0 0 2px red;
+}
+.contact input[name="email"]:focus:invalid {
+  box-shadow: 0 0 0 2px red;
+}
+.contact textarea[name="message"]:focus:invalid {
+  box-shadow: 0 0 0 2px red;
+}
+.contact button {
+width: 240px;
+height: 65px;
+align-self: center;
+border: 0;
+outline: 0;
+border-radius: 2px;
+background-color: #fed136;
+font-weight: 700;
+font-size: 18px;
+line-height: 40px;
+color: #fff;
+text-transform: uppercase;
+vertical-align: middle;
+}
+.contact button:active {
+    transform: scale(1.05);
+}
