@@ -85,7 +85,7 @@
   width: 75px;
   height: 75px;
   margin: auto;
-  background-image: url(../img/Icon-laptop.png);
+  background-image: url(../img/Icon-Laptop.png);
   background-repeat: no-repeat;
   background-position: center;
   box-sizing: border-box;
@@ -98,7 +98,7 @@
   width: 75px;
   height: 75px;
   margin: auto;
-  background-image: url(../img/Icon-locked.png);
+  background-image: url(../img/Icon-Locked.png);
   background-repeat: no-repeat;
   background-position: center;
   box-sizing: border-box;
@@ -124,7 +124,7 @@
 .contact {
   width: 100vw;
   padding: 110px 0;
-  background-image: url(../img/map.png);
+  background-image: url(../img/Map.png);
 }
 .contact-title {
   margin-bottom: 10px;
