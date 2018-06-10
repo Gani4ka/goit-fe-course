@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Module-10</title>
+</head>
+
+<!-- Внутри 2 вопроса. Там где изменены названия классов стоит коментарий "change" -->
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navigation">
+            <a href="#" class="logo">
+                <img srcset="img/logo.png 86w, img/logo@2x.png 172w" sizes="86px" src="img/logo.png"
+                    alt="logo">
+            </a>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="" class="menu__link">About</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Service</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Work</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Blog</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <div class="sup-menu">
+                        <a href="#" class="menu__item sup-menu__item">
+                            <svg>
+                                <use href="img/symbol-defs.svg#icon-header-cart"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="menu__item sup-menu__item">
+                            <svg>
+                                <use href="img/symbol-defs.svg#icon-header-glass"></use>
+                            </svg>
+                        </a>
+                    </div>
+<!--1. Получается, что блок "sup-menu" зависимый от свойств блока "menu" и его нельзя вынести независимым блоком.
+То есть, его не надо было вкладывать в блок "menu"? -->
+                </li>
+            </ul>
+        </nav>
+    <!-- change -->    <p class="pretitle pretitle--for-header">Creative Template</p>
+    <!-- change -->    <h1 class="title title--for-header">Welcome to Mogo</h1>
+    <!-- change -->    <button class="button button--for-header">Learn more</button>
+    </header>
+    <main class="page-wrapper">
+        <!-- SERVICE -->
+        <section class="service">
+    <!-- change -->        <p class="pretitle pretitle--for-service">We work with</p>
+    <!-- change -->        <h2 class="title title--for-section title--for-service">Amazing services</h2>
+            <ul class="service-list">
+                <li class="service-list__item service-list__item--icon-alarm">
+                    <h3 class="service-list__title">Photography</h3>
+                    <p class="service-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor.</p>
+                </li>
+                <li class="service-list__item service-list__item--icon-graph">
+                    <h3 class="service-list__title">Web Design</h3>
+                    <p class="service-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor.</p>
+                </li>
+                <li class="service-list__item service-list__item--icon-comp">
+                    <h3 class="service-list__title">Creativity</h3>
+                    <p class="service-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor.</p>
+                </li>
+                <li class="service-list__item service-list__item--icon-book">
+                    <h3 class="service-list__title">SEO</h3>
+                    <p class="service-list__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                    </p>
+                </li>
+                <li class="service-list__item service-list__item--icon-home">
+                    <h3 class="service-list__title">Css/Html</h3>
+                    <p class="service-list__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                    </p>
+                </li>
+                <li class="service-list__item service-list__item--icon-image">
+                    <h3 class="service-list__title">Digital</h3>
+                    <p class="service-list__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <!-- TEAM -->
+        <section class="team">
+    <!-- change -->        <p class="pretitle pretitle--for-team">Who we are</p>
+    <!-- change -->        <h2 class="title title--section title--for-team">Meet our team</h2>
+            <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. </p>
+            <div class="team-members-wrapper">
+                <figure class="team-member">
+                    <img srcset="img/men1.jpg 380w, img/men1@2x.jpg 760w" sizes="380px" src="img/men1.jpg"
+                        width="380" height="470" alt="men">
+                    <figcaption>
+                        <p class="team-member__name">Matthew Dix</p>
+                        <p class="team-member__occupation">Graphic Design</p>
+                    </figcaption>
+                    <div class="team-conteiner-hover">
+                        <button class="conteiner-hover__button">
+                            <span class="visualy-hiden">facebook</span>
+                            <svg class="team-conteiner-hover__icon">
+                                <use href="img/symbol-defs.svg#icon-cosial-facebook"></use>
+                            </svg>
+                        </button>
+                        <button class="conteiner-hover__button">
+                            <span class="visualy-hiden">instagram</span>
+                            <svg class="team-conteiner-hover__icon">
+                                <use href="img/symbol-defs.svg#icon-cosial-instagram"></use>
+                            </svg>
+                        </button>
+                        <button class="conteiner-hover__button">
+                            <span class="visualy-hiden">pinterest</span>
+                            <svg class="team-conteiner-hover__icon">
+                                <use href="img/symbol-defs.svg#icon-cosial-pinterest"></use>
+                            </svg>
+                        </button>
+                        <button class="conteiner-hover__button">
+                            <span class="visualy-hiden">twitter</span>
+                            <svg class="team-conteiner-hover__icon">
+                                <use href="img/symbol-defs.svg#icon-cosial-twitter"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </figure>
+                <figure class="team-member">
+                    <img srcset="img/men2.jpg 380w, img/men2@2x.jpg 760w" sizes="380px" src="img/men2.jpg"
+                        width="380" height="470" alt="men">
+                    <figcaption>
+                        <p class="team-member__name">Christopher Campbell</p>
+                        <p class="team-member__occupation">Branding/UX design</p>
+                    </figcaption>
+                    <div class="team-conteiner-hover">
+                        <button class="conteiner-hover__button">
+                            <span class="visualy-hiden">facebook</span>
+                            <svg class="team-conteiner-hover__icon">
+                                <use href="img/symbol-defs.svg#icon-cosial-facebook"></use>
+                            </svg>
+                        </button>
+                        <button class="conteiner-hover__button">
+                            <span class="visualy-hiden">instagram</span>
+                            <svg class="team-conteiner-hover__icon">
+                                <use href="img/symbol-defs.svg#icon-cosial-instagram"></use>
+                            </svg>
+                        </button>
+                        <button class="conteiner-hover__button">
+                            <span class="visualy-hiden">pinterest</span>
+                            <svg class="team-conteiner-hover__icon">
+                                <use href="img/symbol-defs.svg#icon-cosial-pinterest"></use>
+                            </svg>
+                        </button>
+                        <button class="conteiner-hover__button">
+                            <span class="visualy-hiden">twitter</span>
+                            <svg class="team-conteiner-hover__icon">
+                                <use href="img/symbol-defs.svg#icon-cosial-twitter"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </figure>
+                <figure class="team-member">
+                    <img srcset="img/men3.jpg 380w, img/men3@2x.jpg 760w" sizes="380px" src="img/men3.jpg"
+                        width="380" height="470" alt="men">
+                    <figcaption>
+                        <p class="team-member__name">Michael Fertig</p>
+                        <p class="team-member__occupation">Developer</p>
+                    </figcaption>
+                    <div class="team-conteiner-hover">
+                        <button class="conteiner-hover__button">
+                            <span class="visualy-hiden">facebook</span>
+                            <svg class="team-conteiner-hover__icon">
+                                <use href="img/symbol-defs.svg#icon-cosial-facebook"></use>
+                            </svg>
+                        </button>
+                        <button class="conteiner-hover__button">
+                            <span class="visualy-hiden">instagram</span>
+                            <svg class="team-conteiner-hover__icon">
+                                <use href="img/symbol-defs.svg#icon-cosial-instagram"></use>
+                            </svg>
+                        </button>
+                        <button class="conteiner-hover__button">
+                            <span class="visualy-hiden">pinterest</span>
+                            <svg class="team-conteiner-hover__icon">
+                                <use href="img/symbol-defs.svg#icon-cosial-pinterest"></use>
+                            </svg>
+                        </button>
+                        <button class="conteiner-hover__button">
+                            <span class="visualy-hiden">twitter</span>
+                            <svg class="team-conteiner-hover__icon">
+                                <use href="img/symbol-defs.svg#icon-cosial-twitter"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p class="footer-text">© 2016 MoGo free PSD template by
+            <span class="footer-text__last-word">Laaqiq</span>
+        </p>
+    <!-- change -->    <form class="form" action="#">
+    <!-- change -->        <input type="email" name="user-email" placeholder="Your Email..." class="input" required>
+    <!-- change -->        <button class="button button--for-footer">subscribe</button>
+        </form>
+    </footer>
+<!-- 2. Блоки pretitle, title, button повторяющиеся и вроде бы должны быть независимы и могут быть переиспользованы
+на других страницах, например. Но из-за общих свойств pretitle, title, button и модификаторов --for-header,
+--for-section, --for-footer (возможно их следовало назвать иначе? но суть не в этом) они несамостоятельны.
+Получается, чтобы их вынести в отдельный файл,нужно также каждому вынести свойства для модификаторов и
+общие, то есть повторять один и тот же css.
+Как правильно поступать? -->
+</body>
+
+</html>
+
+
