@@ -1,0 +1,60 @@
+.team-conteiner-hover {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 380px;
+    height: 470px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, .9)), to(rgba(252, 227, 138, .9)));
+    background-image: -webkit-linear-gradient(rgba(243, 129, 129, .9), rgba(252, 227, 138, .9));
+    background-image: -o-linear-gradient(rgba(243, 129, 129, .9), rgba(252, 227, 138, .9));
+    background-image: linear-gradient(rgba(243, 129, 129, .9), rgba(252, 227, 138, .9));
+    -webkit-box-shadow: 11px 10px #95e1d3;
+            box-shadow: 11px 10px #95e1d3;
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 200ms;
+         -o-transition-duration: 200ms;
+            transition-duration: 200ms;
+  }
+  .team-member:hover .team-conteiner-hover {
+    opacity: 1;
+  }
+  .conteiner-hover__button {
+    width: 55px;
+    height: 55px;
+    margin-right: 1.5px;
+    border: none;
+    background-color: #fce38a;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: 0;
+    -webkit-transition: background-color 200ms;
+    -o-transition: background-color 200ms;
+    transition: background-color 200ms;
+    cursor: pointer;
+  }
+  .team-conteiner-hover__icon {
+    width: 39px;
+    height: 32px;
+    fill: #f38181;
+  }
+  .conteiner-hover__button:hover {
+    background-color: #f38181;
+  }
+  .conteiner-hover__button:hover .team-conteiner-hover__icon {
+    fill: #fff;
+  }
+  .visualy-hiden {
+    display: none;
+  }
