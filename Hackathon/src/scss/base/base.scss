@@ -1,0 +1,23 @@
+body{
+  @include tablet{
+    padding: 0 10px;
+  }
+
+  @include mobile{
+    padding: 0 5px;
+  }
+  
+}
+
+.wrapper{
+  width: 70.6666%;
+  margin: 0 auto;
+
+  @include tablet{
+    width: 100%;
+  }
+
+  @include mobile{
+    min-width: 320px;
+  }
+}
