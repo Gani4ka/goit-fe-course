@@ -1,0 +1,50 @@
+.team-conteiner-hover {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 470px;
+  @extend %gradient;
+  box-shadow: 11px 10px $button-color;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 200ms;
+
+    &__icon {
+      width: 39px;
+      height: 32px;
+      fill: $bg-color-top;
+    }
+  }
+
+  .team-member:hover .team-conteiner-hover {
+    opacity: 1;
+  }
+
+  .conteiner-hover__button {
+    width: 55px;
+    height: 55px;
+    margin-right: 1.5px;
+    border: none;
+    background-color: $bg-color-bottom;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: 0;
+    transition: background-color 200ms;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $bg-color-top;
+    }
+
+    &:hover .team-conteiner-hover__icon {
+      fill: #fff;
+    }
+  }
+
+  .visualy-hiden {
+    display: none;
+  }

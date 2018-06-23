@@ -1,0 +1,54 @@
+// Variables
+
+// Colors
+
+$bg-color-top: #f38181;
+$bg-color-bottom: #fce38a;
+$text-color: #999999;
+$title-color: #333333;
+$input-text-color: #e5e5e5;
+$button-color: #95e1d3;
+$button-color-active: #45dbc0;
+
+// Fonts
+
+$main-font: "Montserrat", sans-serif;
+$pretitle-font: "Kaushan Script", sans-serif;
+$text-font: "Roboto", sans-serif;
+
+// Placeholders
+
+%gradient {
+  background-image: linear-gradient(
+    rgba(243, 129, 129, 0.9),
+    rgba(252, 227, 138, 0.9));
+}
+
+%gradient-bg {
+  background-image: linear-gradient(
+    rgba(243, 129, 129, 0.9),
+    rgba(252, 227, 138, 0.9)),
+    url(../img/baner-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+%service-list-icon {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  float: left;
+  margin: 4px 26px 54px 30px;
+}
+
+@mixin bg-image ($background-image) {
+  background-image: $background-image;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+

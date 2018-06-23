@@ -1,0 +1,62 @@
+.service-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+    &__item {
+      width: 400px;
+    }
+
+    &__item:not(:nth-last-of-type(-n+3)) {
+      margin-bottom: 80px;
+    }
+  
+    &__title {
+      margin: 0;
+      padding-bottom: 10px;
+      font-family: $main-font;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $title-color;
+    }
+
+    &__text {
+      font-family: $text-font;
+      font-size: 15px;
+      line-height: 24px;
+      color: $text-color;
+    }
+
+    &__item--icon-alarm::before {
+      @extend %service-list-icon;
+      @include bg-image (url(../img/alarm.svg));
+    }
+
+    &__item--icon-graph::before {
+      @extend %service-list-icon;
+      @include bg-image (url(../img/graph.svg));
+    }
+
+    &__item--icon-comp::before {
+      @extend %service-list-icon;
+      @include bg-image (url(../img/comp.svg));
+    }
+
+    &__item--icon-book::before {
+      @extend %service-list-icon;
+      @include bg-image (url(../img/book.svg));
+    }
+
+    &__item--icon-home::before {
+      @extend %service-list-icon;
+      @include bg-image (url(../img/home.svg));
+    }
+
+    &__item--icon-image::before {
+      @extend %service-list-icon;
+      @include bg-image (url(../img/image.svg));
+    }
+  }

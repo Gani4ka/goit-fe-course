@@ -1,0 +1,250 @@
+/*
+  Import partials below
+*/
+@import "normalize";
+@import "fonts";
+@import "utils";
+@import "service-list";
+@import "team-member";
+@import "team-member-hover";
+
+* {
+  margin: 0;
+  padding: 0;
+
+  /* outline: 1px solid black; */
+}
+
+/* HEADER */
+.header {
+  max-width: 1920px;
+  margin: auto;
+  padding-top: 33px;
+  padding-bottom: 225px;
+  @extend %gradient-bg;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  
+  &__item:not(:last-child) {
+    margin-right: 44px;
+  }
+
+  &__link {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5px;
+    font-family: $main-font;
+    font-size: 14px;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+  }
+}
+
+.menu__item:hover .menu__link {
+  color: $bg-color-bottom;
+  border-bottom: 3px solid $bg-color-bottom;
+}
+
+.sup-menu {
+  text-align: center;
+  height: auto;
+  line-height: 29px;
+
+  &__item {
+    text-decoration: none;
+  }
+  
+  &__item svg {
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+  }
+
+  &__item:hover svg {
+    fill: $bg-color-bottom;
+  }
+}
+
+.pretitle {
+  text-align: center;
+  margin: 0;
+  font-family: $pretitle-font;
+
+  &--for-header {
+    padding-top: 160px;
+    font-size: 72px;
+  }
+}  
+
+.title {
+  margin: 0;
+  text-align: center;
+  font-family: $main-font;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &--for-header {
+    padding: 25px 250px 100px;
+    font-size: 150px;
+    line-height: 150px;
+  }
+}
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  outline: 0;
+  cursor: pointer;
+
+  &--for-header {
+    width: 164px;
+    height: 44px;
+    margin: 0 auto;
+    border: 3px solid #fff;
+    background-color: transparent;
+  }
+
+  &--for-header:active {
+    color: $bg-color-bottom;
+    border: 3px solid $bg-color-bottom;
+  }
+}
+
+/* SECTIONS */
+
+/* Services */
+.page-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.service {
+  padding-bottom: 70px;
+}
+
+.pretitle--for-service {
+  padding-top: 45px;
+  font-size: 24px;
+}
+
+.title--for-service {
+  padding: 18px 0 62px;
+  font-size: 30px;
+}
+
+.title--for-section::after {
+  content: "";
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 35px;
+  width: 60px;
+  height: 3px;
+  @include bg-image (url(../img/rectangle.svg));
+}
+
+/* TEAM */
+.pretitle--for-team {
+  padding: 0;
+  font-size: 24px;
+}
+
+.title--for-team {
+  padding: 18px 0 42px;
+  font-size: 30px;
+}
+
+.team__text {
+  padding: 0 128px;
+  text-align: center;
+  font-family: $text-font;
+  font-size: 15px;
+  line-height: 24px;
+  color: $text-color;
+}
+
+.team-members-wrapper {
+  margin: 0;
+  padding-top: 90px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  padding: 10px 0;
+  border-top: 1px solid $input-text-color;
+
+  &-text {
+    font-family: $main-font;
+    font-size: 14px;
+    color: $title-color;
+    align-self: center;
+  }
+
+  &-text__last-word {
+    color: $bg-color-top;
+  }
+}
+
+.input {
+  position: absolute;
+  right: 150px;
+  width: 230px;
+  height: 40px;
+  padding-left: 12px;
+  box-sizing: border-box;
+  border: 1px solid $input-text-color;
+  font-family: $text-font;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+  outline: 0;
+
+  &::-webkit-input-placeholder {
+    color: $text-font;
+  }
+
+  &::placeholder {
+    color: $text-font;
+  }
+}
+
+.button--for-footer {
+  width: 150px;
+  height: 40px;
+  background-color: $button-color;
+  border: none;
+
+  &:active {
+    background-color: $button-color-active;
+  }
+}
