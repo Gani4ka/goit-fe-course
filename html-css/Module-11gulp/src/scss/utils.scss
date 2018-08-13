@@ -40,8 +40,9 @@ $text-font: "Roboto", sans-serif;
   display: block;
   width: 32px;
   height: 32px;
-  float: left;
-  margin: 4px 26px 54px 30px;
+  position: absolute;
+  left: 30px;
+  // margin: 4px 26px 54px 30px;
 }
 
 @mixin bg-image ($background-image) {

@@ -1,3 +1,12 @@
+.team-member__image {
+  transition-property: transform;
+  transition-duration: 200ms;
+}
+
+.team-member:hover .team-member__image {
+    transform: translate(-10px, -10px);
+}
+
 .team-conteiner-hover {
   position: absolute;
   top: -10px;
