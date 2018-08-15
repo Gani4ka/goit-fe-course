@@ -6,6 +6,7 @@
 
   &__name {
     padding-top: 24px;
+    margin-bottom: 5px;
     text-align: center;
     font-family: $main-font;
     font-size: 14px;
@@ -14,7 +15,6 @@
     }
 
   &__occupation {
-    padding-top: 5px;
     text-align: center;
     font-family: $text-font;
     font-weight: lighter;
